@@ -16,4 +16,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Setup lazy.nvim
-require("lazy").setup("gu.plugins")
+require("lazy").setup({ { import = "gu.plugins" }, { import = "gu.plugins.lsp" } })
